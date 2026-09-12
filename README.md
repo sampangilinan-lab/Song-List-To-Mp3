@@ -3,7 +3,7 @@
 
 **HOW IT WORKS:**
 
-Simply put in a list of songs (search queries) in the songs.txt file separated by new lines (you can delete the text in the songs.txt file). All this code does is takes each query from the list and searches it and converts and downloads it as an mp3 file.
+Simply put in a list of songs (search queries) in the songs.txt file separated by new lines (delete any text in the songs.txt file first). All this code does is takes each query from the list and searches it and converts and downloads it as an mp3 file.
 
 
 **TO RUN:**
