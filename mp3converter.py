@@ -33,23 +33,23 @@ for i in song_list:
     video_url = first_video.get_attribute("href")
 
 
-    # New tab
+    # New search
     driver.get(converter)
 
 
     # Find the input box
     input_box = wait.until(
-        ec.presence_of_element_located((By.ID, 'video-url'))
+        ec.element_to_be_clickable((By.ID, 'video-url'))
     )
     input_box.send_keys(video_url)
 
     # Submit
     check = wait.until(
-        ec.presence_of_element_located((By.ID, 'convert-button-1'))
+        ec.element_to_be_clickable((By.ID, 'convert-button-1'))
     )
     check.click()
 
-    # Wait for the download button to be clickable
+    # Wait for conversion to complete
     again = wait.until(
         ec.element_to_be_clickable((By.XPATH, '//*[@id="convert-again-btn"]'))
     )
